@@ -1,3 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 !important;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.button {
+  position: relative;
+  background: #155dfc;
+  color: #ffffff;
+  padding: 0.7em 1em;
+  border-radius: 0.5em;
+  border-bottom: 4px solid #002679;
+  transform: translate(0em, 0em);
+}
+.button:hover {
+  border-bottom: 4px solid #002679;
+  background: #0c47c7;
+  outline: 2px solid white;
+}
+.button:active {
+  transform: translate(0em, 0px);
+  box-shadow: 0 4px #000a1f;
+  background: #002679;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #fff;
+  background: rgb(0, 0, 0);
+  width: 100%;
+  padding: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+header img {
+  max-width: 100%;
+  height: auto;
+  width: 60px;
+}
+header nav {
+  position: fixed;
+  left: 2.5vw;
+  bottom: 1em;
+  padding: 1em;
+  width: 95vw;
+  flex-direction: column;
+  position: absolute;
+  background-color: #000;
+  border-radius: 5em;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  width: 75%;
+  margin: 0 auto;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+header nav ul li {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+header nav ul li.active {
+  color: #155dfc;
+}
+
 @media (min-width: 40rem) {
   * {
     text-wrap: balance;
